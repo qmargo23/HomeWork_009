@@ -10,9 +10,9 @@ public class Main {
     // Объявить метод «сгенерироватьМассив»
     public static int[] generateRandomArray() {
         java.util.Random random = new java.util.Random();
-        int[] arr = new int[3];// тестовая версия... 30
+        int[] arr = new int[30];
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = random.nextInt(10);//  тестовая версия... arr[i] = random.nextInt(100_000) + 100_000
+            arr[i] = random.nextInt(100_000) + 100_000;//  тестовая версия...
         }
         return arr;
     }
@@ -23,7 +23,7 @@ public class Main {
         System.out.println("Задача 1");
 
         int[ ] arr = generateRandomArray();
-        System.out.println(Arrays.toString(arr));
+//        System.out.println(Arrays.toString(arr));
         int payments = 0; // начальная сумма выплат
         for (int j : arr) {
             payments = payments + j;
@@ -38,7 +38,7 @@ public class Main {
         System.out.println("Задача 2");
 
         int[ ] arr = generateRandomArray();
-        System.out.println(Arrays.toString(arr));
+//        System.out.println(Arrays.toString(arr));
 
         int paymentsMax = arr[0];
         for (final int current : arr) {
@@ -65,7 +65,7 @@ public class Main {
         System.out.println("Задача 3");
 
         int[ ] arr = generateRandomArray();
-        System.out.println(Arrays.toString(arr));
+//        System.out.println(Arrays.toString(arr));
         float payments = 0f; // сумма выплат
 
         for (int j : arr) {
